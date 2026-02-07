@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qk-pca-analysis"
+version = "0.1.0"
+description = "PCA analysis of Q/K attention vectors captured by qk-sniffer"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "datasets",
+    "huggingface_hub",
+    "pyyaml",
+    "matplotlib",
+    "pandas",
+    "torch",
+    "tqdm",
+]
+
+[project.scripts]
+pca-analyze = "qk_pca.cli:main_analyze"
+pca-visualize = "qk_pca.cli:main_visualize"
+
+[tool.setuptools.packages.find]
+include = ["qk_pca*"]

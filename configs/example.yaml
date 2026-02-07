@@ -1,0 +1,22 @@
+data:
+  dataset_name: viktoroo/sniffed-qk-smollm2-360m-tr512-pre-rope
+  split: null           # null = auto-discover prefix from repo
+  kinds: [q, k]
+  layers: null          # null = all available
+  heads: null           # null = all available
+  max_samples: null     # null = use all samples
+
+pca:
+  n_components: 10
+  backend: sklearn      # sklearn | torch
+
+analysis:
+  parallel:
+    enabled: true
+    max_workers: null   # null = min(cpu_count, 4)
+    backend: process
+
+output:
+  results_dir: results/smollm2-360m
+
+device: auto

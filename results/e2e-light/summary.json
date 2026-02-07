@@ -1,0 +1,57 @@
+{
+  "dataset": "viktoroo/sniffed-qk-smollm2-360m-tr512-pre-rope",
+  "split": null,
+  "timestamp": "2026-02-07T17:16:49.176045+00:00",
+  "device": "cpu",
+  "n_components": 5,
+  "pca_backend": "sklearn",
+  "heads_analyzed": 1,
+  "total_samples": 200,
+  "top_correlations": [
+    {
+      "layer": 0,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 3,
+      "correlation": -0.09560841358568002,
+      "p_value": 0.17807069043690768,
+      "explained_variance_ratio": 0.03728511929512024
+    },
+    {
+      "layer": 0,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 1,
+      "correlation": -0.0594865219282852,
+      "p_value": 0.4027417346567655,
+      "explained_variance_ratio": 0.19285985827445984
+    },
+    {
+      "layer": 0,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 2,
+      "correlation": -0.04083851074911204,
+      "p_value": 0.565857308163751,
+      "explained_variance_ratio": 0.0613676980137825
+    },
+    {
+      "layer": 0,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 4,
+      "correlation": -0.03852413056587852,
+      "p_value": 0.5880943160377423,
+      "explained_variance_ratio": 0.03251492232084274
+    },
+    {
+      "layer": 0,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 0,
+      "correlation": -0.02266723206753355,
+      "p_value": 0.7500338668490019,
+      "explained_variance_ratio": 0.6208721995353699
+    }
+  ]
+}

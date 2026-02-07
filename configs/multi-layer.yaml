@@ -1,0 +1,23 @@
+data:
+  dataset_name: viktoroo/sniffed-qk-smollm2-360m-tr512-pre-rope
+  split: null
+  kinds: [q, k]
+  layers: null
+  heads: null
+  max_samples: null          # use all ~55k samples per head
+  sample_heads: 10           # randomly pick 10 heads across all layers
+  seed: 42                   # reproducible sampling
+
+pca:
+  n_components: 5
+  backend: sklearn
+
+analysis:
+  correlation_threshold: 0.1
+  parallel:
+    enabled: false
+
+output:
+  results_dir: results/multi-layer
+
+device: cpu

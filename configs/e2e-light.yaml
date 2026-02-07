@@ -1,0 +1,20 @@
+data:
+  dataset_name: viktoroo/sniffed-qk-smollm2-360m-tr512-pre-rope
+  split: null
+  kinds: [q]
+  layers: [0]
+  heads: [0]
+  max_samples: 200
+
+pca:
+  n_components: 5
+  backend: sklearn
+
+analysis:
+  parallel:
+    enabled: false
+
+output:
+  results_dir: results/e2e-light
+
+device: cpu

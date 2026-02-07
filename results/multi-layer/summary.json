@@ -1,0 +1,293 @@
+{
+  "dataset": "viktoroo/sniffed-qk-smollm2-360m-tr512-pre-rope",
+  "split": null,
+  "timestamp": "2026-02-07T17:54:43.852378+00:00",
+  "device": "cpu",
+  "n_components": 5,
+  "pca_backend": "sklearn",
+  "heads_analyzed": 10,
+  "total_samples": 552960,
+  "high_correlation_summary": {
+    "threshold": 0.1,
+    "total_components": 50,
+    "high_abs_components": 10,
+    "high_neg_components": 5,
+    "heads_total": 10,
+    "heads_with_high_abs": 5,
+    "heads_with_high_neg": 4,
+    "high_abs_hits": [
+      {
+        "layer": 5,
+        "head": 2,
+        "kind": "k",
+        "pca_dim": 3,
+        "correlation": 0.10469318666889965,
+        "p_value": 1.5114901200553898e-134,
+        "explained_variance_ratio": 0.043491996824741364
+      },
+      {
+        "layer": 7,
+        "head": 1,
+        "kind": "k",
+        "pca_dim": 0,
+        "correlation": 0.20663547148798245,
+        "p_value": 0.0,
+        "explained_variance_ratio": 0.20082737505435944
+      },
+      {
+        "layer": 7,
+        "head": 1,
+        "kind": "k",
+        "pca_dim": 2,
+        "correlation": 0.153564444697722,
+        "p_value": 6.365503133322834e-289,
+        "explained_variance_ratio": 0.10133298486471176
+      },
+      {
+        "layer": 7,
+        "head": 1,
+        "kind": "k",
+        "pca_dim": 3,
+        "correlation": -0.25814505463328896,
+        "p_value": 0.0,
+        "explained_variance_ratio": 0.06112314760684967
+      },
+      {
+        "layer": 11,
+        "head": 4,
+        "kind": "k",
+        "pca_dim": 0,
+        "correlation": -0.14132043817836024,
+        "p_value": 1.4352055035612023e-244,
+        "explained_variance_ratio": 0.21595673263072968
+      },
+      {
+        "layer": 12,
+        "head": 5,
+        "kind": "q",
+        "pca_dim": 1,
+        "correlation": -0.11323358683107015,
+        "p_value": 3.3838731462724505e-157,
+        "explained_variance_ratio": 0.10575594007968903
+      },
+      {
+        "layer": 12,
+        "head": 5,
+        "kind": "q",
+        "pca_dim": 2,
+        "correlation": 0.12901591453244557,
+        "p_value": 7.598005017602374e-204,
+        "explained_variance_ratio": 0.0747293084859848
+      },
+      {
+        "layer": 12,
+        "head": 5,
+        "kind": "q",
+        "pca_dim": 4,
+        "correlation": -0.13972736403271951,
+        "p_value": 4.42583002133796e-239,
+        "explained_variance_ratio": 0.042589884251356125
+      },
+      {
+        "layer": 30,
+        "head": 2,
+        "kind": "k",
+        "pca_dim": 0,
+        "correlation": -0.17688513046522467,
+        "p_value": 0.0,
+        "explained_variance_ratio": 0.1298934370279312
+      },
+      {
+        "layer": 30,
+        "head": 2,
+        "kind": "k",
+        "pca_dim": 3,
+        "correlation": 0.18784737809474722,
+        "p_value": 0.0,
+        "explained_variance_ratio": 0.053274888545274734
+      }
+    ]
+  },
+  "top_correlations": [
+    {
+      "layer": 7,
+      "head": 1,
+      "kind": "k",
+      "pca_dim": 3,
+      "correlation": -0.25814505463328896,
+      "p_value": 0.0,
+      "explained_variance_ratio": 0.06112314760684967
+    },
+    {
+      "layer": 7,
+      "head": 1,
+      "kind": "k",
+      "pca_dim": 0,
+      "correlation": 0.20663547148798245,
+      "p_value": 0.0,
+      "explained_variance_ratio": 0.20082737505435944
+    },
+    {
+      "layer": 30,
+      "head": 2,
+      "kind": "k",
+      "pca_dim": 3,
+      "correlation": 0.18784737809474722,
+      "p_value": 0.0,
+      "explained_variance_ratio": 0.053274888545274734
+    },
+    {
+      "layer": 30,
+      "head": 2,
+      "kind": "k",
+      "pca_dim": 0,
+      "correlation": -0.17688513046522467,
+      "p_value": 0.0,
+      "explained_variance_ratio": 0.1298934370279312
+    },
+    {
+      "layer": 7,
+      "head": 1,
+      "kind": "k",
+      "pca_dim": 2,
+      "correlation": 0.153564444697722,
+      "p_value": 6.365503133322834e-289,
+      "explained_variance_ratio": 0.10133298486471176
+    },
+    {
+      "layer": 11,
+      "head": 4,
+      "kind": "k",
+      "pca_dim": 0,
+      "correlation": -0.14132043817836024,
+      "p_value": 1.4352055035612023e-244,
+      "explained_variance_ratio": 0.21595673263072968
+    },
+    {
+      "layer": 12,
+      "head": 5,
+      "kind": "q",
+      "pca_dim": 4,
+      "correlation": -0.13972736403271951,
+      "p_value": 4.42583002133796e-239,
+      "explained_variance_ratio": 0.042589884251356125
+    },
+    {
+      "layer": 12,
+      "head": 5,
+      "kind": "q",
+      "pca_dim": 2,
+      "correlation": 0.12901591453244557,
+      "p_value": 7.598005017602374e-204,
+      "explained_variance_ratio": 0.0747293084859848
+    },
+    {
+      "layer": 12,
+      "head": 5,
+      "kind": "q",
+      "pca_dim": 1,
+      "correlation": -0.11323358683107015,
+      "p_value": 3.3838731462724505e-157,
+      "explained_variance_ratio": 0.10575594007968903
+    },
+    {
+      "layer": 5,
+      "head": 2,
+      "kind": "k",
+      "pca_dim": 3,
+      "correlation": 0.10469318666889965,
+      "p_value": 1.5114901200553898e-134,
+      "explained_variance_ratio": 0.043491996824741364
+    },
+    {
+      "layer": 11,
+      "head": 4,
+      "kind": "k",
+      "pca_dim": 2,
+      "correlation": -0.09568118919309475,
+      "p_value": 1.3196575163674265e-112,
+      "explained_variance_ratio": 0.048095155507326126
+    },
+    {
+      "layer": 11,
+      "head": 4,
+      "kind": "k",
+      "pca_dim": 1,
+      "correlation": 0.08356433214100845,
+      "p_value": 2.9439170463497473e-86,
+      "explained_variance_ratio": 0.06698882579803467
+    },
+    {
+      "layer": 30,
+      "head": 2,
+      "kind": "k",
+      "pca_dim": 1,
+      "correlation": -0.07137591549538468,
+      "p_value": 2.2365125895151608e-63,
+      "explained_variance_ratio": 0.11136035621166229
+    },
+    {
+      "layer": 7,
+      "head": 1,
+      "kind": "k",
+      "pca_dim": 4,
+      "correlation": 0.06720419653408488,
+      "p_value": 2.2411460192483095e-56,
+      "explained_variance_ratio": 0.0415959469974041
+    },
+    {
+      "layer": 12,
+      "head": 5,
+      "kind": "q",
+      "pca_dim": 0,
+      "correlation": 0.051531339836676605,
+      "p_value": 7.745362328748e-34,
+      "explained_variance_ratio": 0.17099350690841675
+    },
+    {
+      "layer": 5,
+      "head": 2,
+      "kind": "k",
+      "pca_dim": 1,
+      "correlation": 0.048703079346125944,
+      "p_value": 2.1165529358066778e-30,
+      "explained_variance_ratio": 0.11309492588043213
+    },
+    {
+      "layer": 14,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 2,
+      "correlation": 0.04862763251901393,
+      "p_value": 2.5981983920299128e-30,
+      "explained_variance_ratio": 0.07009807229042053
+    },
+    {
+      "layer": 1,
+      "head": 2,
+      "kind": "q",
+      "pca_dim": 3,
+      "correlation": -0.04707086128151009,
+      "p_value": 1.6653140216663304e-28,
+      "explained_variance_ratio": 0.060930974781513214
+    },
+    {
+      "layer": 14,
+      "head": 0,
+      "kind": "q",
+      "pca_dim": 1,
+      "correlation": -0.04640673175244395,
+      "p_value": 9.432062451920366e-28,
+      "explained_variance_ratio": 0.10289864987134933
+    },
+    {
+      "layer": 5,
+      "head": 9,
+      "kind": "q",
+      "pca_dim": 0,
+      "correlation": 0.04543367256498494,
+      "p_value": 1.1453544223600057e-26,
+      "explained_variance_ratio": 0.1039629578590393
+    }
+  ]
+}

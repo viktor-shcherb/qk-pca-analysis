@@ -1,0 +1,23 @@
+data:
+  dataset_name: viktoroo/sniffed-qk-smollm2-360m-tr512
+  split: null
+  kinds: [q, k]
+  layers: null
+  heads: null
+  max_samples: null
+  sample_heads: 10
+  seed: 42
+
+pca:
+  n_components: 5
+  backend: sklearn
+
+analysis:
+  correlation_threshold: 0.3
+  parallel:
+    enabled: false
+
+output:
+  results_dir: results/multi-layer-post-rope
+
+device: cpu
