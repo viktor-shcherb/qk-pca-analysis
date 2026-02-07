@@ -107,7 +107,7 @@ def scatter_with_position(
         c="#dddddd",
         alpha=0.3,
         rasterized=True,
-        label="corpus",
+        label="_nolegend_",
     )
 
     # Foreground: highlighted sequence with viridis colormap
@@ -120,7 +120,7 @@ def scatter_with_position(
         alpha=0.9,
         edgecolors="black",
         linewidths=0.3,
-        label=f"example {example_id}",
+        label="_nolegend_",
         zorder=5,
     )
 
@@ -132,7 +132,7 @@ def scatter_with_position(
 
     ax.set_xlabel(f"PC{pc_x} ({evr_x:.1%} var, r={r_x:+.3f})")
     ax.set_ylabel(f"PC{pc_y} ({evr_y:.1%} var, r={r_y:+.3f})")
-    ax.set_title(f"{target} — example {example_id}  (n={len(proj_seq)} tokens)")
+    ax.set_title(f"{target}  (n={len(proj_seq)} tokens)")
 
     # Correlation summary box
     corr_text = "\n".join(
@@ -145,8 +145,6 @@ def scatter_with_position(
         fontfamily="monospace",
         bbox=dict(boxstyle="round,pad=0.4", facecolor="white", alpha=0.8),
     )
-
-    ax.legend(loc="upper right", fontsize=8)
 
     fig.tight_layout()
     fig.savefig(output, dpi=dpi, bbox_inches="tight")

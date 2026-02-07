@@ -1,6 +1,6 @@
 # qk-pca-analysis
 
-PCA analysis of Q/K attention vectors captured by [qk-sniffer](https://github.com/viktoroo/qk-sniffer). Discovers correlations between high-variance PCA directions and token positions in LLM attention heads.
+PCA analysis of Q/K attention vectors captured by [qk-sniffer](https://github.com/viktor-shcherb/qk-sniffer). Discovers correlations between high-variance PCA directions and token positions in LLM attention heads.
 
 ## Setup
 
